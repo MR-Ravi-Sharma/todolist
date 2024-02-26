@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    /* border: 1px solid red; */
+}
+
+ body {
+    background-color: black;
+ }
+
+.container {
+    width: 70%;
+    min-height: 100dvh;
+    margin: auto;
+    background-color: #456;
+    color: rgba(255, 255, 255, 0.63);
+}
+
+.container > :first-child {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2px;
+}
+
+.app-title {
+    display: inline-block;
+    margin: auto;
+    margin-top: 10px;
+    /* border-bottom: 5px solid greenyellow; */
+}
+
+.container h1:hover {
+    cursor: pointer;
+}
+
+.container2 {
+    margin: 0 40px;
+}
+
+.container3 {
+    justify-content: center;
+    padding: 10px 80px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    transition: all 0.5s ease-out;
+}
+
+hr {
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+form {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+input,
+textarea,
+button {
+    padding: 5px 20px;   
+    font-size: 1.3rem;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: none;
+    background-color: #ff000054;
+    color: skyblue;
+}
+
+textarea {
+    font-size: 1rem;
+}
+
+button {
+    background-color: black;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+.delete {
+    padding: 0;
+    margin-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.all-tasks {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    margin: 0 40px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0ff7d;
+    color: purple;
+    padding: 5px 15px;
+    margin-bottom: 5px;
+}
+
+.task p {
+    white-space: wrap;
+}
+
+.task span {
+    font-size: 20px;
+    color: #444;
+}
+
+.task button {
+    --length: 30px;
+    width:  var(--length) !important;
+    height: var(--length) !important;
+    border-radius: 100%;
+}
+
+.task button:hover {
+    background-color: rgba(255, 0, 0, 0.68);
+}
